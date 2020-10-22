@@ -1,0 +1,12 @@
+
+.btn {
+    border-radius: 100;
+  }
+
+.card .card-header[data-toggle="collapse"].collapsed {
+    border-radius: 0.35rem;
+  }
+
+body {
+    background-color: #de4f39;    
+}

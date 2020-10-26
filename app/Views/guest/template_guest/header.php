@@ -49,7 +49,11 @@
             <a class="nav-link" href="#">Fasilitas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login">Login</a>
+            <?php if(logged_in()):?>
+              <a class="nav-link" href="<?= base_url(route_to('logout'))?>">Logout</a>
+            <?php else :?>
+              <a class="nav-link" href="<?= base_url(route_to('login'))?>">Login</a>
+            <?php endif;?>
           </li>
         </ul>
       </div>
